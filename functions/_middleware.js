@@ -16,7 +16,7 @@ export async function onRequest(context) {
     const [user, pass] = atob(base64).split(':');
     
     const validUser = 'admin';
-    const validPass = 'bdef';
+    const validPass = 'Bidenchort7!';
     
     if (user !== validUser || pass !== validPass) {
         return new Response('Forbidden', { status: 403 });
